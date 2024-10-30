@@ -1,0 +1,282 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /*nos ayudar a ajustar el medelo del diseño*/
+}
+
+body {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; /*formato de texto a utilizar en la pagina*/
+    background-image: linear-gradient(to top, rgb(200, 200, 200) 0%, rgb(245, 245, 245) 100% ) 
+
+
+
+}
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.btn-wsp{
+    position: fixed;
+    bottom: 150px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 99999999;   
+}
+
+@media (max-width: 768px){
+.btn-wsp{
+right: 10px;
+}
+} 
+
+
+.contenedor h2 {
+    text-align: center;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline;         
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }   
+}
+
+.navegacion-principal a:hover{ 
+    background-color: #3bbebe ;
+    color: black;
+    }
+
+    .navegacion-principal a{
+        color: rgb(134, 128, 128);
+       text-decoration: none;
+       font-size: 1.5rem;
+       font-weight: 700;
+       padding: 1rem;
+           }
+
+.nav-bg{
+    background-color: white;
+    
+}
+
+.titulo h1 {
+    color:  rgb(90, 89, 89);
+    text-align: center;
+    box-shadow: 10px 10px 10px 10px rgb(35, 201, 212);
+    margin-top: 4rem;
+}
+
+.navegacion-principal a:hover{ 
+
+    color: black
+        /*hover es una seudo clase, acciona distinto
+         solo con la actividad del usuario sobre el enlace
+         hay varios tipos: hover - active - focus- focus-within y visited*/
+ }
+
+
+/*CHAMPAQUI*/
+
+.intro{
+    margin-top: 6rem;
+    margin-left: 3rem;
+    max-width: 90%;
+    box-shadow: 1px 1px 3px 3px  rgb(80, 78, 78);   
+    font-size: 15px;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.cosito{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    max-width: 90%;
+    font-size: 15px;
+    
+}
+
+.cosito h2{
+    text-align: center;
+    color:rgb(71, 70, 70);
+  
+    
+}
+
+.cosito p{
+    text-align: center;
+    box-shadow: 1px 1px 3px 3px  rgb(80, 78, 78);  
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.contenido{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 2fr 5fr;    
+}
+
+.contenido-productos{
+    display: flex;
+    margin-left: 2rem;    
+    gap: 1rem;
+    margin-left: 2rem;
+    max-width: 100%;  
+}
+.producto-imagen{
+    width: 300px;
+    height: 300px;
+   padding: 1.3rem;
+   box-shadow: 1px 1px 3px 3px  rgb(80, 78, 78);
+}
+
+@media (max-width: 768px){
+    .producto-imagen{
+        margin-left: -2.5rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .contenido{
+        display: block;
+        justify-content: space-between;        
+    }
+    .contenido-productos{
+        margin-top: 4rem;
+        margin-left: 6rem;
+        box-shadow: 2px 0px rgb(80, 78, 78);
+   
+    }
+    }
+
+.box{
+    display: flex;
+    text-align: start;
+    line-height: 0;
+    margin-left: 2rem;
+    max-width: 100%;
+    flex-direction: column;     
+    box-shadow: 10px 10px 10px 10px rgb(35, 201, 212);
+    padding: 2rem 2rem;
+    font-size: small;    
+}
+
+@media (max-width: 768px){
+.box{
+    display: block;
+    justify-content: space-between;
+}
+.box h3{
+    font-size: 15px;
+}
+.box p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.texto-dias h4{
+ font-size: 15px;
+
+}
+.texto-dias p{
+    font-size: small;
+}
+}
+
+.texto{    
+    display: grid;
+    grid-template-columns:repeat(2, 1fr)
+}
+
+.texto-dias{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    max-width: 80%;
+}
+
+.texto-informacion{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    max-width: 80%;
+}
+
+@media (max-width: 768px){
+    .cosito p{
+        font-size: 11px;
+    }
+    .cosito h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .intro p{
+        font-size: 11px;
+    }
+    }
+
+.reserva{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr)
+}
+
+@media (max-width: 768px){
+    .texto{
+        display: block;
+    }
+    .reserva{
+       display: block;
+    }
+}
+
+.reserva-pagos{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    max-width: 80%;
+}
+
+.reserva-pagos p{
+    font-weight: 700;
+    font-size: small;
+}
+
+.reserva-informacion p{
+    font-weight: 700;
+    font-size: small;
+}
+
+.reserva-informacion{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    max-width: 80%;
+}
+
+.texto h2{
+    font-weight: 900;
+    font-size: medium;
+}
+
+.final{
+ text-align: center;
+ box-shadow: 1px 1px 5px 5px rgb(80, 78, 78);
+ padding: 1rem;
+ border-radius: 2rem;
+}
+
+.texto p{
+    font-weight: 600;
+    font-size: small;
+}
+

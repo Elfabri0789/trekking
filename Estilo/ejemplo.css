@@ -1,0 +1,23 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /*nos ayudar a ajustar el medelo del diseño*/
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; /*formato de texto a utilizar en la pagina*/
+
+
+
+}
+
+
+.imagen{
+display: grid;
+grid-template-columns: repeat(2, 1/2fr);
+}
